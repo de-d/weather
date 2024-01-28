@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/icon/logo.png" />
+    <link rel="stylesheet" href="./resetCSS.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="weather__container">
+        <form id="search-form" class="weather__city-search">
+          <input type="text" id="search-input" class="weather__input" placeholder="Enter the name of the city" autocomplete="off" />
+          <button type="submit" class="weather__search-button">
+            <img src="./src/icon/search.svg" alt="search-img" />
+          </button>
+        </form>
+        <div class="weather__data-city-container">
+          <div class="data__container">
+            <div class="data__info">
+              <div class="data__city-name-container">
+                <span id="city-name" class="data__city-name">?</span>
+                <label>
+                  <input type="checkbox" id="data__btn" class="data__fav-btn" />
+                  <svg class="data__fav-icon" width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      class="shape"
+                      id="Shape"
+                      opacity="0.54"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.5154 1C15.9205 1 13.5851 2.7875 12.6769 5.125C11.7687 2.7875 9.43333 1 6.83846 1C3.59487 1 1 3.6125 1 7.1875C1 12 5.54103 16.125 12.6769 23C19.8128 16.125 24.3538 12 24.3538 7.1875C24.3538 3.6125 21.759 1 18.5154 1Z"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </label>
+              </div>
+              <div class="data__info-temp-container">
+                <p class="data__info-temp"><span id="temp">?</span>°</p>
+                <img class="info-img" src="https://openweathermap.org/img/wn/04d@4x.png" alt="" />
+              </div>
+              <div class="data__details-container">
+                <p class="info-feelslike">Feels like: <span id="feelslike">?</span>°</p>
+                <p class="info-sunrise">Sunrise: <span id="sunrise">?</span></p>
+                <p class="info-sunset">Sunset: <span id="sunset">?</span></p>
+              </div>
+              <div class="data__forecast-container">
+                <p id="forecast-time-one">?</p>
+                <div class="forecast-one">
+                  <div class="forecast-info">
+                    <p class="forecast-temp">Temperature: <span id="forecast-temp-one">?</span>°</p>
+                    <p class="forecast-feelslike">Feels like: <span id="forecast-feelslike-one">?</span>°</p>
+                  </div>
+                  <div><img class="forecast-img" id="forecast-img-one" src="https://openweathermap.org/img/wn/04d@4x.png" alt="" /></div>
+                </div>
+                <p id="forecast-time-two">?</p>
+                <div class="forecast-two">
+                  <div class="forecast-info">
+                    <p class="forecast-temp">Temperature: <span id="forecast-temp-two">?</span>°</p>
+                    <p class="forecast-feelslike">Feels like: <span id="forecast-feelslike-two">?</span>°</p>
+                  </div>
+                  <div><img class="forecast-img" id="forecast-img-two" src="https://openweathermap.org/img/wn/04d@4x.png" alt="" /></div>
+                </div>
+                <p id="forecast-time-three">?</p>
+                <div class="forecast-three">
+                  <div class="forecast-info">
+                    <p class="forecast-temp">Temperature: <span id="forecast-temp-three">?</span>°</p>
+                    <p class="forecast-feelslike">Feels like: <span id="forecast-feelslike-three">?</span>°</p>
+                  </div>
+                  <div><img class="forecast-img" id="forecast-img-three" src="https://openweathermap.org/img/wn/04d@4x.png" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="city__container" id="city__container">
+            <div class="city__add-headline">
+              <h2 class="city__add-h2">Added Locations:</h2>
+            </div>
+            <div class="city__favlist-container" id="city__favlist-container">
+              <!-- <div class="fav-list__item">
+                <p class="fav-list__city-name">Aktobe</p>
+                <button type="button" class="fav-list__delete-btn">
+                  <img src="./src/icon/close-icon.svg" alt="" />
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
