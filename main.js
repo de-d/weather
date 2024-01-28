@@ -12,8 +12,8 @@ function validateCityName(cityName) {
 }
 
 async function fetchWeatherData(cityName) {
-  const WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather";
-  const FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast";
+  const WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather";
+  const FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast";
   const METRIC = "&units=metric";
 
   const API_KEY = "cdbaa2db9a9310e76fa37970cfabeb93";
